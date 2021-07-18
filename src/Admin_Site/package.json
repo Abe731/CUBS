@@ -1,0 +1,46 @@
+{
+  "name": "Ecommerce-BoilerPlate-Admin_Site",
+  "version": "1.0.0",
+  "description": "This is the admin page for the ecommerce boilerplate by aniketh ",
+  "main": "index.js",
+  "scripts": {
+    "snyk": "snyk test",
+    "start:prod": "pm2-runtime start ecosystem.config.js --env production",
+    "start:dev": "nodemon server.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.3",
+    "body-parser": "^1.18.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "csurf": "^1.9.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-controller": "^0.3.2",
+    "express-limiter": "^1.6.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "helmet": "^3.15.0",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.0",
+    "multer": "^1.4.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pm2": "^3.2.9",
+    "showdown": "^1.9.0",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "snyk": "^1.165.0",
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2",
+    "nodemon": "^1.19.0",
+    "eslint": "^5.16.0"
+  }
+}

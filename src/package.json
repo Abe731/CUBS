@@ -1,0 +1,61 @@
+{
+  "name": "Ecommerce-BoilerPlate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "snyk": "snyk test",
+    "jest": "jest  --detectOpenHandles",
+    "start:prod": "pm2-runtime start ecosystem.config.js --env production",
+    "start:dev": "nodemon server.js",
+    "lint": "eslint .",
+    "test:ci": "jest --forceExit ",
+    "coveralls": "jest --coverage --forceExit && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "csurf": "^1.10.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.0",
+    "express-controller": "^0.3.2",
+    "express-limiter": "^1.6.1",
+    "express-rate-limit": "^3.5.1",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "hat": "0.0.3",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.5",
+    "nodemailer": "^6.3.1",
+    "owasp-password-strength-test": "^1.3.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "pm2": "^3.2.9",
+    "razorpay": "^2.0.4",
+    "stripe": "^6.36.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.0",
+    "snyk": "^1.165.1",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "forceExit": true
+  },
+  "proxy": "localhost:8000/"
+}
